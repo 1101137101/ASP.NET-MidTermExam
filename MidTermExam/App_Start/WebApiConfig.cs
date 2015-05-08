@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace KuasWebApp
+namespace MidTermExam
 {
     public static class WebApiConfig
     {
@@ -15,14 +15,8 @@ namespace KuasWebApp
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
-
-            config.Routes.MapHttpRoute(
-                name: "ActionApi",
-                routeTemplate: "api/{controller}/{action}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{CourseName}",
+                defaults: new { CourseName = RouteParameter.Optional }
             );
 
             // Web Api 整合 Spring Dependency.

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Web.Http;
 
-namespace KuasWebApp.Controllers
+namespace MidTermExam.Controllers
 {
     public class CourseController : ApiController
     {
